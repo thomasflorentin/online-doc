@@ -1,0 +1,33 @@
+@mixin flex {
+    display: flex;
+}
+@mixin flex--center {
+    @include flex;
+    justify-content: center;
+    align-items: center;
+}
+.displayNone {
+    display: none;
+}
+
+.mainContentMargins {
+    margin-inline: 15%;
+}
+
+
+
+
+.strong {
+    font-weight: 600;
+}
+.sectionTitle {
+    color: rgb(47, 113, 255);
+}
+.sectionSubtitle {
+    margin-top: 3rem;
+    color: rgb(84, 194, 21);
+
+    &--important {
+        color: rgb(255, 35, 35);
+    }
+}

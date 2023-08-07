@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Matomo</title>
+
+    <!-- .md interpreter script import -->
+    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
+</head>
+
+
+
+<body>
+    <header class="header">
+        <nav class="header__nav flexStart">
+            <a href="/" class="header__nav">
+                <ion-icon name="home"></ion-icon>
+            </a>
+
+            <h1 class="header__nav__title">Matomo</h1>
+        </nav>
+
+        <div class="header__auth" onclick="displayAuthForm()" data-active=true>
+            <ion-icon name="person-sharp"></ion-icon>
+        </div>
+    </header>
+    <div class="header__form">
+        <div class="header__form__back"></div>
+        <form>
+            <div class="header__form__inputWrapper">
+                <label for="id">ID</label>
+                <input name="id" type="text">
+            </div>
+            <div class="header__form__inputWrapper">
+                <label for="password">Mot de Passe</label>
+                <input name="password" type="password">
+            </div>
+            <div class="header__form__send">
+                <input type="button" value="envoyer">
+            </div>
+        </form>
+    </div>
+
+
+    <main class="home">
+        <div class="mainContentMargins">
+            <header class="single__intro">
+                <img src="https://nicoseosem.com/wp-content/uploads/matomo-logo.png" alt="logo matomo">
+
+                <p class="single__intro--txt">Matomo est un outil de data analytics, autrement dit, un outil qui permet le suivi du trafic d'un site internet ainsi que l'ensemble des événements qui se passent autour du site. 
+                Il permet donc de récolter des informations afin de pouvoir les traiter/ les étudier pour par la suite effectuer des changements sur le site, des campagnes publicitaires/newsletters, etc... 
+                </p>
+
+                <nav class="single__intro--summary">
+                    <h3>Sommaire :</h3>
+
+                    <!-- <ol class="summaryList">
+                        <li class="summaryList__item">
+                            <a href="#section1" rel="noopener noreferrer">Première section</a>
+                            <ul>
+                                <li class="summaryList__item--sub"><a href="#" rel="noopener noreferrer">Sub-section</a></li>
+                                <li class="summaryList__item--sub"><a href="#" rel="noopener noreferrer">Sub-section</a></li>
+                                <li class="summaryList__item--sub"><a href="#" rel="noopener noreferrer">Sub-section</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="#" rel="noopener noreferrer">Deuxième section</a>
+                            <ul>
+                                <li class="summaryList__item--sub"><a href="#" rel="noopener noreferrer">Sub-section</a></li>
+                                <li class="summaryList__item--sub"><a href="#" rel="noopener noreferrer">Sub-section</a></li>
+                                <li class="summaryList__item--sub"><a href="#" rel="noopener noreferrer">Sub-section</a></li>
+                            </ul>
+                        </li>
+                    </ol> -->
+                </nav>
+            </header>
+
+
+
+            <!-- <h3 id="section1" class="sectionTitle">Différences Matomo et Google Analytics</h3>
+            <section class="single__section mainContentMargins">
+                <p class="strong">Matomo et Google Analytics sont tous les deux des outils populaires et rempliront dans la grande majorité des cas tous les besoins de data-analytics dont vous aurez/avez besoin pour votre site.</p>
+                <p>Dans les deux cas, ils vous permettront d'avoir accès à un panel d'informations détaillées ainsi qu'à des résumés vous permettant d'évaluer le trafic que génère votre site ainsi que les détails qui y sont associés, les comportements adoptés par les utilisateurs, etc…
+                Enfin, dans tous les cas, les deux peuvent être utilisés simultanément si vous en avez le besoin ou que vous souhaitez comparer les résultats des deux services.
+                </p>
+                <p>La principale différence est que Matomo est Open source, c'est-à-dire que le code peut être télécharger et modifier pour les besoins du projet. Contrairement à Google Analytics, dont le code est précieusement gardé…</p>
+
+                <h4 class="sectionSubtitle">Fonctionnalités uniques de Matomo</h4>
+                <ul>
+                    <li><strong>Contrôle total des données</strong> récoltées auprès des visiteurs et utilisateurs</li>
+                    <li><strong>Personnalisable</strong> : vis-à-vis de l'interface ainsi que des différents services nécessaires (puisque gratuit pour sa version serveur, différente de son service cloud)</li>
+                    <li><strong>Analyses vidéo du comportements des visiteurs</strong> via la fonctionnalité payante Heatmap (voir section addons payants)</li>
+                    <li><strong>N'utilise pas obligatoirement de cookies</strong> si précisé lors de sa configuration, donc pas d'écran de consentement aux cookies obligatoire (cependant, dans notre cas il en faut un)</li>
+                    <li><strong>Suivi automatique des formulaires du site</strong></li>
+                </ul>
+            </section> -->
+
+
+            <zero-md src="./courses/matomo/matomo.md">
+                <template data-merge="prepend">
+                    <link rel="stylesheet" href="/styles/style.css" />
+                </template>
+            </zero-md>
+            
+        </div>
+    </main>
+    
+    <script src="./js/script.js" defer></script>
+    <!--<script src="./js/ToC.js" defer></script> -->
+
+    
+    <!-- Ion Icons scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

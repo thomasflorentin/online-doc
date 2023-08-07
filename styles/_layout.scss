@@ -1,0 +1,111 @@
+@use 'OOCSS' as d;
+
+main {
+    margin-block: 90px;
+}
+
+.iconWrapper {
+    @include d.flex;
+    padding: 0.5em;
+    
+    font-size: 1.5rem;
+    color: rgb(126, 126, 126);
+
+    cursor: pointer;
+    transition: .15s;
+    
+    &:hover {
+        background-color: rgb(214, 214, 214);
+    }
+}
+.header {
+    width: 100%;
+
+    @include d.flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    
+    background-color: rgb(240, 240, 240);
+    box-shadow: 1px 3px 9px -1px rgba(128,128,128,1);
+    -webkit-box-shadow: 1px 3px 9px -1px rgba(128,128,128,1);
+    -moz-box-shadow: 1px 3px 9px -1px rgba(128,128,128,1);
+
+    &__nav {
+        @include d.flex;
+
+        a {
+            @extend .iconWrapper;
+        }
+
+        &__title {
+            @include d.flex--center;
+
+            margin-block: 0;
+            margin-left: .5em;
+        }
+    }
+    &__auth {
+        @extend .iconWrapper;
+    }
+
+    &__form {
+        padding: 1rem;
+
+        position: fixed;
+        top: 80px;
+        right: -100%;
+
+        border: 1px solid rgb(230, 230, 230);
+        box-shadow: 0px 0px 20px 0px rgb(189 189 189);
+        -webkit-box-shadow: 0px 0px 20px 0px rgb(189 189 189);
+        -moz-box-shadow: 0px 0px 20px 0px rgb(189 189 189);
+
+        transition: .25s;
+    
+        &__inputWrapper {
+            @include d.flex;
+            justify-content: end;
+            align-items: center;
+            gap: .5rem;
+
+            &:not(:first-of-type) {
+                margin-top: .5rem;
+            }
+            
+            input {
+                padding: 0.25rem;
+                
+                border: 1px solid rgb(240, 240, 240);
+                border-bottom: 1px solid lightgray;
+            }
+        }
+        &__back {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        &__send {
+            margin-top: .5rem;
+
+            @include d.flex;
+            justify-content: end;
+
+            input {
+                padding: 0.25rem .66rem;
+                
+                background-color: rgb(74, 74, 202);
+                border-radius: 4px;
+                border: none;
+
+                color: white;
+            }
+        }
+    }
+}

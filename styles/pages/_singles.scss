@@ -1,0 +1,51 @@
+.single__intro {
+    margin-bottom: 5rem;
+
+    img {
+        width: 100%;
+        max-height: 250px;
+        object-fit: contain;
+    }
+    &--txt {
+        margin-bottom: 1.5em;
+
+        font-size: 1.25rem;
+        font-weight: 100;
+        text-align: justify;
+    }
+    &--summary {
+        margin-inline: 50px;
+        padding: 1rem;
+
+        background-color: rgb(250, 250, 250);
+
+        h3 {
+            margin: 0;
+            margin-bottom: 1rem;
+        }
+        .summaryList {
+            margin: 0;
+        }
+    }
+}
+
+zero-md {
+    position: relative;
+    z-index: 1;
+}
+.markdown-body {
+    h1, h2 {margin-top: 3rem !important;}
+    h2 {
+        color: rgb(69, 120, 230);
+    }
+    h3 {
+        color: rgb(90, 173, 41);
+    }
+    p {
+        text-align: justify;
+
+        img {
+            border: 2px solid grey;
+        }
+    }
+}

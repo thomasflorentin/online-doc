@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Documentation en ligne</title>
+</head>
+
+
+
+<body>
+    <header class="header">
+        <nav class="header__nav flexStart">
+            <a href="/" class="header__nav">
+                <ion-icon name="home"></ion-icon>
+            </a>
+
+            <h1 class="header__nav__title">Accueil</h1>
+        </nav>
+
+        <div class="header__auth" onclick="displayAuthForm()" data-active=true>
+            <ion-icon name="person-sharp"></ion-icon>
+        </div>
+    </header>
+    <div class="header__form">
+        <div class="header__form__back"></div>
+        <form>
+            <div class="header__form__inputWrapper">
+                <label for="id">ID</label>
+                <input name="id" type="text">
+            </div>
+            <div class="header__form__inputWrapper">
+                <label for="password">Mot de Passe</label>
+                <input name="password" type="password">
+            </div>
+            <div class="header__form__send">
+                <input type="button" value="envoyer">
+            </div>
+        </form>
+    </div>
+
+
+    <main class="home">
+        <h2>Liste des tutoriels en ligne</h2>
+
+        <div class="home__grid">
+            <a href="/matomo.html" class="home__grid__card">
+                <img src="https://nicoseosem.com/wp-content/uploads/matomo-logo.png" class="home__grid__card__img">
+
+                <div class="home__grid__card__txtWrapper">
+                    <h3 class="home__grid__card__title">Matomo</h3>
+                    <p class="home__grid__card__desc">Entièrement conforme au RGPD et en tant que leader dans le traitement éthique des données, Matomo vous propose un outil d'Analytique Web qui protège les internautes et leur vie privée, tout en étant similaire à GA3 dans son utilisation.</p>
+                </div>
+            </a>
+            <a href="/matomo.html" class="home__grid__card">
+                <img src="https://nicoseosem.com/wp-content/uploads/matomo-logo.png" class="home__grid__card__img">
+
+                <div class="home__grid__card__txtWrapper">
+                    <h3 class="home__grid__card__title">Matomo</h3>
+                    <p class="home__grid__card__desc">Entièrement conforme au RGPD et en tant que leader dans le traitement éthique des données, Matomo vous propose un outil d'Analytique Web qui protège les internautes et leur vie privée, tout en étant similaire à GA3 dans son utilisation.</p>
+                </div>
+            </a>
+            <a href="/matomo.html" class="home__grid__card">
+                <img src="https://nicoseosem.com/wp-content/uploads/matomo-logo.png" class="home__grid__card__img">
+
+                <div class="home__grid__card__txtWrapper">
+                    <h3 class="home__grid__card__title">Matomo</h3>
+                    <p class="home__grid__card__desc">Entièrement conforme au RGPD et en tant que leader dans le traitement éthique des données, Matomo vous propose un outil d'Analytique Web qui protège les internautes et leur vie privée, tout en étant similaire à GA3 dans son utilisation.</p>
+                </div>
+            </a>
+            <a href="/matomo.html" class="home__grid__card">
+                <img src="https://nicoseosem.com/wp-content/uploads/matomo-logo.png" class="home__grid__card__img">
+
+                <div class="home__grid__card__txtWrapper">
+                    <h3 class="home__grid__card__title">Matomo</h3>
+                    <p class="home__grid__card__desc">Entièrement conforme au RGPD et en tant que leader dans le traitement éthique des données, Matomo vous propose un outil d'Analytique Web qui protège les internautes et leur vie privée, tout en étant similaire à GA3 dans son utilisation.</p>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    
+    <!-- Ion Icons scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

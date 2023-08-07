@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: rgb(37, 37, 37);
+  background-color: aliceblue;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.displayNone {
+  display: none;
+}
+
+.mainContentMargins {
+  margin-inline: 15%;
+}
+
+.strong {
+  font-weight: 600;
+}
+
+.sectionTitle {
+  color: rgb(47, 113, 255);
+}
+
+.sectionSubtitle {
+  margin-top: 3rem;
+  color: rgb(84, 194, 21);
+}
+.sectionSubtitle--important {
+  color: rgb(255, 35, 35);
+}
+
+main {
+  margin-block: 90px;
+}
+
+.iconWrapper, .header__auth, .header__nav a {
+  display: flex;
+  padding: 0.5em;
+  font-size: 1.5rem;
+  color: rgb(126, 126, 126);
+  cursor: pointer;
+  transition: 0.15s;
+}
+.iconWrapper:hover, .header__auth:hover, .header__nav a:hover {
+  background-color: rgb(214, 214, 214);
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgb(240, 240, 240);
+  box-shadow: 1px 3px 9px -1px rgb(128, 128, 128);
+  -webkit-box-shadow: 1px 3px 9px -1px rgb(128, 128, 128);
+  -moz-box-shadow: 1px 3px 9px -1px rgb(128, 128, 128);
+}
+.header__nav {
+  display: flex;
+}
+.header__nav__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 0;
+  margin-left: 0.5em;
+}
+.header__form {
+  padding: 1rem;
+  position: fixed;
+  top: 80px;
+  right: -100%;
+  border: 1px solid rgb(230, 230, 230);
+  box-shadow: 0px 0px 20px 0px rgb(189, 189, 189);
+  -webkit-box-shadow: 0px 0px 20px 0px rgb(189, 189, 189);
+  -moz-box-shadow: 0px 0px 20px 0px rgb(189, 189, 189);
+  transition: 0.25s;
+}
+.header__form__inputWrapper {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 0.5rem;
+}
+.header__form__inputWrapper:not(:first-of-type) {
+  margin-top: 0.5rem;
+}
+.header__form__inputWrapper input {
+  padding: 0.25rem;
+  border: 1px solid rgb(240, 240, 240);
+  border-bottom: 1px solid lightgray;
+}
+.header__form__back {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header__form__send {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: end;
+}
+.header__form__send input {
+  padding: 0.25rem 0.66rem;
+  background-color: rgb(74, 74, 202);
+  border-radius: 4px;
+  border: none;
+  color: white;
+}
+
+.home {
+  padding-inline: 35px;
+}
+.home__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.home__grid__card {
+  height: max-content;
+  max-height: 450px;
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: rgb(236, 236, 236);
+  text-decoration: none;
+  color: unset;
+  transition: all 0.2s;
+}
+.home__grid__card__img {
+  height: 100%;
+  max-height: 50%;
+  width: 100%;
+  border: 1px solid rgb(231, 231, 231);
+  background-color: rgb(253, 253, 253);
+  object-fit: cover;
+  object-position: center;
+}
+.home__grid__card__txtWrapper {
+  height: 100%;
+  max-height: 50%;
+  padding: 0.5rem;
+}
+.home__grid__card__title {
+  margin: 0;
+  color: rgb(45, 45, 151);
+  transition: inherit;
+}
+.home__grid__card__desc {
+  margin: 0;
+  margin-top: 0.5rem;
+}
+.home__grid__card:hover {
+  background-color: rgb(240, 240, 240);
+  transform: scale(1.025);
+}
+.home__grid__card:hover .home__grid__card__title {
+  color: rgb(74, 74, 202);
+}
+
+.single__intro {
+  margin-bottom: 5rem;
+}
+.single__intro img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: contain;
+}
+.single__intro--txt {
+  margin-bottom: 1.5em;
+  font-size: 1.25rem;
+  font-weight: 100;
+  text-align: justify;
+}
+.single__intro--summary {
+  margin-inline: 50px;
+  padding: 1rem;
+  background-color: rgb(250, 250, 250);
+}
+.single__intro--summary h3 {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.single__intro--summary .summaryList {
+  margin: 0;
+}
+
+zero-md {
+  position: relative;
+  z-index: 1;
+}
+
+.markdown-body h1, .markdown-body h2 {
+  margin-top: 3rem !important;
+}
+.markdown-body h2 {
+  color: rgb(69, 120, 230);
+}
+.markdown-body h3 {
+  color: rgb(90, 173, 41);
+}
+.markdown-body p {
+  text-align: justify;
+}
+.markdown-body p img {
+  border: 2px solid grey;
+}
+
+/*# sourceMappingURL=style.css.map */
