@@ -10,10 +10,11 @@ function generateToc() {
     console.log(allTitles);
     allTitles.forEach((title) => {
         const level = parseInt(title.tagName.substring(1)); // Obtient le niveau du titre (1 pour h1, 2 pour h2, etc.)
-        const indentation = '&emsp;'.repeat(level - 1); // Génère des tabulations en fonction du niveau
+        const indentation = '&emsp;'.repeat(level - 2); // Génère des tabulations en fonction du niveau
 
         const tocItem = document.createElement('div');
-        tocItem.innerHTML = `${indentation}<a href="#${title.id}">${title.textContent}</a>`;
+        console.log();
+        tocItem.innerHTML = `${indentation}<a href="#${title.id}" class="ToC__h${level}">${title.textContent}</a>`;
         tocContainer.appendChild(tocItem);
     });
 }

@@ -206,6 +206,12 @@ main {
 .single__intro--summary .summaryList {
   margin: 0;
 }
+.single__intro--summary .ToC__h2 {
+  color: rgb(69, 120, 230);
+}
+.single__intro--summary .ToC__h3 {
+  color: rgb(90, 173, 41);
+}
 
 zero-md {
   position: relative;
